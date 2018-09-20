@@ -18,9 +18,6 @@ namespace BMICalculator
         const double PoundsToKgs = 0.453592;
         const double InchestoMetres = 0.0254;
 
-        [Key]
-        public int ID { get; set; }
-
         [Display(Name = "Weight - Stones")]
         [Range(5, 50, ErrorMessage = "Stones must be between 5 and 50")]                              // max 50 stone
         public int WeightStones { get; set; }
